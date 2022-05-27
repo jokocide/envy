@@ -1,0 +1,13 @@
+.app-deck {
+    position: relative;
+    cursor: pointer;
+    background: lightgreen;
+    display: inline-block;
+    border-radius: var(--radius);
+}
+
+p {
+    padding: .30em;
+    margin: 0;
+    user-select: none;
+}

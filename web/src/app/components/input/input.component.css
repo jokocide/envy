@@ -1,0 +1,27 @@
+.app-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-input input {
+    padding: 10px;
+    background: rgb(247, 247, 247);
+    border: 3px solid black;
+    border-radius: 2px;
+    transition: var(--fast-alive);
+    outline: none;
+}
+
+.app-input input:hover {
+    border: 3px solid var(--blue);
+}
+
+.app-input input:focus {
+    border: 3px solid var(--blue);
+    background: white;
+    cursor: text;
+}
+
+.app-input label {
+    margin-bottom: 6px;
+}

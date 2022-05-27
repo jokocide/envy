@@ -1,0 +1,24 @@
+.app-button button {
+    font-size: inherit;
+    border-radius: var(--radius);
+    padding: 11px 14px;
+    cursor: pointer;
+    margin: 4px;
+    transition: var(--fast-alive);
+}
+
+.primary-true {
+    border: none;
+    background: var(--purple);
+    color: white;
+}
+
+.primary-false {
+    background: transparent;
+    border: 3px solid black;
+    color: black;
+}
+
+.primary-false:hover {
+    border: 3px solid var(--blue);
+}

@@ -1,0 +1,20 @@
+<div class="app-nav">
+    <nav>
+        <div class="nav-section-one">
+            <a class="nav-item nav-title" routerLink="/">Envy</a>
+            <a class="nav-item" routerLink="/profile">Profile</a>
+            <a class="nav-item" routerLink="/sharing">Sharing</a>
+        </div>
+        <div class="nav-section-two">
+        </div>
+        <div class="nav-section-three">
+            <div *ngIf="isLoggedIn; else elseBlock">
+                <a class="nav-item" routerLink="/">Logout</a>
+            </div>
+            <ng-template #elseBlock>
+                <a class="nav-item" routerLink="/login">Login</a>
+                <a class="nav-item" routerLink="/register">Sign up</a>
+            </ng-template>
+        </div>
+    </nav>
+</div>

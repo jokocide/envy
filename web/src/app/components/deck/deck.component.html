@@ -1,0 +1,16 @@
+<div 
+class="app-deck" 
+[routerLink]="['/decks/' + this.deck.id]"
+>
+    <div id="top-card" class="card">
+        <p>{{ deck.title }}</p>
+    </div>
+</div>
+
+<!-- [routerLink]="['/cards']"
+[queryParams]="{ 
+    deckId: this.deck.id,
+    cardsCount: this.deck.cardsCount
+ }" -->
+
+ <!-- [state]="{ deckId: this.deck.id }" -->

@@ -1,0 +1,49 @@
+/* <div
+id="shadow-card-{{i}}"
+class="card shadow-card"
+*ngFor="let item of [].constructor(deck.cardsCount) | slice:0:2;
+let i = index"
+>
+</div> */
+
+.shadow-card {
+    position: absolute;
+    transition: var(--fast-alive);
+}
+
+#top-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.33px;
+    position: relative;
+    padding: var(--card-padding);
+    cursor: pointer;
+    transition: var(--fast-alive);
+}
+
+#top-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 1) 0px 0px 0px 1px;
+}
+
+#shadow-card-0 {
+    z-index: -1;
+    top: -7px;
+    left: -7px;
+}
+
+#shadow-card-1 {
+    z-index: -2;
+    top: -14px;
+    left: -14px;
+}
+
+#top-card:hover ~ #shadow-card-0 {
+    transform: rotate(-2.5deg);
+    left: -9px;
+}
+
+#top-card:hover ~ #shadow-card-1 {
+    transform: rotate(-5deg);
+    left: -17px;
+}

@@ -1,0 +1,25 @@
+nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--bar-height);
+    padding: 0 44px;
+    box-shadow: var(--low-shadow);
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item:not(:last-of-type) {
+    margin-right: 17px;
+}
+
+.nav-title {
+    font-weight: bold;
+    font-size: 18px;
+}
