@@ -19,6 +19,7 @@ import { SharingComponent } from './components/sharing/sharing.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/card/card.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

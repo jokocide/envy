@@ -20,13 +20,9 @@
     margin-top: 5px;
     cursor: pointer;
     transition: var(--fast-alive);
-    max-height: 30px;
+    max-height: 25px;
 }
 
 .more-button:hover {
     background: rgba(148, 148, 148, 0.358);
-}
-
-.more-button svg {
-    font-size: 20px;
 }

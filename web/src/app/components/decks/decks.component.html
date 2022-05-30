@@ -1,6 +1,9 @@
 <div class="app-decks card-container">
     <div>
-        <app-deck *ngFor="let deck of decks" [deck]="deck"></app-deck>
+        <app-deck 
+            *ngFor="let deck of decks" 
+            [deck]="deck">
+        </app-deck>
     </div>
     <div class="more-button">
         <fa-icon [icon]="faEllipsis"></fa-icon>

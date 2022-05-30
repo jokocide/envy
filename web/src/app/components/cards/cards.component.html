@@ -1,3 +1,6 @@
 <div class="app-cards card-container">
-    <p>cards works!</p>
+    <app-card 
+            *ngFor="let card of cards" 
+            [card]="card">
+    </app-card>
 </div>

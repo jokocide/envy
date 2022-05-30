@@ -10,15 +10,18 @@ import { Card } from '../../Card';
 })
 export class CardsComponent implements OnInit {
   deckId: string;
-  cards: Card[] = [];
+  cards: Card[];
 
-  constructor(private cardService: CardService, private route: ActivatedRoute) { 
-    this.route.params.subscribe( params => this.deckId = params['deckId'] );
+  constructor(private cardService: CardService, private activatedRoute: ActivatedRoute) { 
+    this.activatedRoute.paramMap.subscribe( params => {
+
+      // Deck ID will not (should not) be null, so use non-null assertion.
+      this.deckId = params.get('deckId')!;
+    } );
   }
 
   ngOnInit(): void {
-    console.log("Logging now.");
-    console.log(this.deckId);
+    this.cardService.getCards(this.deckId).subscribe(cards => this.cards = cards);
   }
 
 }

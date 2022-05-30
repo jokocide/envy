@@ -10,7 +10,13 @@ import { SummaryComponent } from './components/summary/summary.component';
 const routes: Routes = [
   {
     path: '',
-    component: SummaryComponent
+    component: SummaryComponent,
+    children: [
+      {
+        path: 'decks/:deckId',
+        component: CardsComponent
+      }
+    ]
   },
   {
     path: 'login',
@@ -27,19 +33,11 @@ const routes: Routes = [
   {
     path: 'sharing', 
     component: SharingComponent
-  },
-  {
-    path: 'decks/:deckId', 
-    component: CardsComponent
-  },
-  // { 
-  //   path: '**', 
-  //   component: NotFoundComponent 
-  // }
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
