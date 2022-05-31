@@ -1,13 +1,24 @@
 .app-deck {
     position: relative;
     cursor: pointer;
-    background: lightgreen;
-    display: inline-block;
+    background: rgba(144, 238, 186, 0.555);
+    display: inline-flex;
+    align-items: center;
     border-radius: var(--radius);
+    padding: .30em;
 }
 
-p {
-    padding: .30em;
+.app-deck > p {
     margin: 0;
+}
+
+.title {
+    padding-right: .30em;
     user-select: none;
+    color: black;
+}
+
+.count {
+    font-size: .9em;
+    color: rgb(117, 117, 117);
 }

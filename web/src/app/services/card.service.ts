@@ -13,6 +13,6 @@ export class CardService {
 
   getCards(deckId: string): Observable<Card[]> {
     let fullUrl = (this.apiUrl + deckId);
-    return this.http.get<Card[]>(fullUrl);
+    return this.http.get<Card[]>(fullUrl)
   }
 }

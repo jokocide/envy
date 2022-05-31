@@ -4,4 +4,5 @@
     width: 100%;
     padding: 0 var(--bar-spacing);
     justify-content: center;
+    margin-top: 20px;
 }

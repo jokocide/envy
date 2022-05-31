@@ -1,5 +1,4 @@
-<div class="app-deck" [routerLink]="['/decks/' + this.deck.id]">
-    <div id="top-card" class="card">
-        <p>{{ deck.title }}</p>
-    </div>
+<div class="app-deck" [routerLink]="[this.deck.id]">
+    <p class="title">{{ deck.title }}</p>
+    <p class="count">({{ deck.cardsCount }})</p>
 </div>

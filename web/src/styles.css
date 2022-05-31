@@ -8,7 +8,7 @@
 
 :root {
     --radius: 4px;
-    --fast-alive: .2s all ease-in-out;
+    --fast-alive: .3s all ease-in-out;
     --bar-height: 72px;
     --card-padding: 7px;
     --card-height: 330px;

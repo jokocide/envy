@@ -10,10 +10,15 @@ import { SummaryComponent } from './components/summary/summary.component';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'decks',
+    pathMatch: 'full'
+  },
+  {
+    path: 'decks',
     component: SummaryComponent,
     children: [
       {
-        path: 'decks/:deckId',
+        path: ':deckId',
         component: CardsComponent
       }
     ]
