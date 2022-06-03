@@ -1,28 +1,25 @@
 .app-decks {
     display: flex;
-    padding-top: 5px;
     flex-direction: column;
+    justify-content: space-between;
     background: rgba(169, 169, 169, 0.2);
-    display: flex;
-    justify-content: flex-start;
+    height: 200px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.app-decks > div > * {
-    padding: 5px;
+.decks-container {
+    padding: 14px;
 }
 
 .more-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(148, 148, 148, 0.122);
-    margin-top: 5px;
+    background: rgba(206, 206, 206, 0.122);
     cursor: pointer;
     transition: var(--fast-alive);
-    max-height: 25px;
 }
 
 .more-button:hover {
-    background: rgba(148, 148, 148, 0.358);
+    background: rgba(206, 206, 206, 0.358);
 }

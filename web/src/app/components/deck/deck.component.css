@@ -5,10 +5,11 @@
     display: inline-flex;
     align-items: center;
     border-radius: var(--radius);
-    padding: .30em;
+    margin: 3px 0;
+    padding: 5px;
 }
 
-.app-deck > p {
+.title, .count {
     margin: 0;
 }
 
