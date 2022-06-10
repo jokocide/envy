@@ -1,12 +1,12 @@
 .app-deck {
     position: relative;
     cursor: pointer;
-    background: rgba(144, 238, 186, 0.555);
+    background: black;
     display: inline-flex;
     align-items: center;
     border-radius: var(--radius);
-    margin: 3px 0;
-    padding: 5px;
+    margin: 7px;
+    padding: 8px;
 }
 
 .title, .count {
@@ -16,10 +16,11 @@
 .title {
     padding-right: .30em;
     user-select: none;
-    color: black;
+    color: white;
 }
 
 .count {
     font-size: .9em;
     color: rgb(117, 117, 117);
+    user-select: none;
 }

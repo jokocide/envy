@@ -2,24 +2,40 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: rgba(169, 169, 169, 0.2);
-    height: 200px;
+    padding: 0 14px;
+}
+
+.decks-container-common {
+    display: flex;
+    justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: var(--radius);
+    max-width: 1800px;
+    margin: auto;
 }
 
 .decks-container {
-    padding: 14px;
+    padding: 24px 0;
+    max-height: 9999px;
+    width: 100%;
+}
+
+.decks-container-hidden {
+    visibility: hidden;
+    height: 0;
 }
 
 .more-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(206, 206, 206, 0.122);
     cursor: pointer;
+    padding: 16px;
     transition: var(--fast-alive);
+    color: gray;
+    user-select: none;
 }
 
 .more-button:hover {
-    background: rgba(206, 206, 206, 0.358);
+    text-decoration: underline;
 }
