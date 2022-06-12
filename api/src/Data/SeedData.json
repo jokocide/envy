@@ -3,12 +3,18 @@
         "Title": "Japanese",
         "Cards": [
             {
-                "Question": "Question 1",
-                "Answer": "Answer 1"
+                "Sides": [
+                    "First Japanese question",
+                    "First Japanese answer",
+                    "Notes"
+                ]
             },
             {
-                "Question": "Question 2",
-                "Answer" : "Answer 2"
+                "Sides": [
+                    "Second Japanese question",
+                    "Second Japanese answer",
+                    "Notes"
+                ]
             }
         ]
     },
@@ -25,8 +31,11 @@
         "Title": "Algebra",
         "Cards": [
             {
-                "Question": "Question 1",
-                "Answer": "Answer 1"
+                "Frames": [
+                    "First Algebra question",
+                    "First Algebra answer",
+                    "Notes"
+                ]
             }
         ]
     }

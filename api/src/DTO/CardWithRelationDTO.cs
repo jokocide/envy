@@ -8,9 +8,7 @@ public class CardWithRelationDTO
 
     public DateTime UpdatedDate { get; init; }
 
-    public string Question { get; init; }
-
-    public string Answer { get; init; }
+    public List<string> Sides { get; init; }
     
     public DeckDTO Deck { get; init; }
 }

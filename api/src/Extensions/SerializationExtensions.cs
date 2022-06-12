@@ -44,8 +44,7 @@ namespace Envy.API.Extensions
                     Id = card.Id,  
                     CreatedDate = card.CreatedDate,
                     UpdatedDate = card.UpdatedDate,
-                    Question = card.Question,
-                    Answer = card.Answer
+                    Sides = card.Sides
                 };
 
         public static IEnumerable<CardWithRelationDTO> AsCardWithRelationDTO(
@@ -60,8 +59,7 @@ namespace Envy.API.Extensions
                     Id = card.Id,  
                     CreatedDate = card.CreatedDate,
                     UpdatedDate = card.UpdatedDate,
-                    Question = card.Question,
-                    Answer = card.Answer,
+                    Sides = card.Sides,
                     Deck = card.Deck.AsDeckDTO()
             };
     }

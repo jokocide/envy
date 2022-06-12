@@ -8,9 +8,7 @@ public class Card
 
     public DateTime UpdatedDate { get; set; } = DateTime.Now.ToUniversalTime();
 
-    public string Question { get; set; }
-
-    public string Answer { get; set; }
+    public List<string> Sides { get; set; }
     
     public Guid DeckId { get; set; }
     

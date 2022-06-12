@@ -19,12 +19,10 @@ public static class SeedService
         if (await context.Decks.AnyAsync()) return;
 
         string deckSeedData = await File.ReadAllTextAsync("Data/SeedData.json");
-        JsonSerializerOptions serializeOptions = new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        };
 
-        List<Deck> decks = JsonSerializer.Deserialize<List<Deck>>(deckSeedData, serializeOptions);
+        List<Deck> decks = JsonSerializer.Deserialize<List<Deck>>(deckSeedData, new JsonSerializerOptions {
+            PropertyNameCaseInsensitive = true
+        });
 
         foreach(Deck deck in decks)
         {
