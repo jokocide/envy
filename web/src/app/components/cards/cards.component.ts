@@ -10,7 +10,7 @@ import { Card } from '../../Card';
 })
 export class CardsComponent implements OnInit {
   deckId: string;
-  cards: Card[] = [];
+  cards: Card[];
 
   constructor(
     private cardService: CardService, 

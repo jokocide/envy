@@ -1,7 +1,11 @@
 <div class="app-cards card-container">
     <app-card
             *ngFor="let card of cards" 
-            [card]="card">
+            [id]="card.id"
+            [createdDate]="card.createdDate"
+            [updatedDate]="card.updatedDate"
+            [sides]="card.sides"
+            >
     </app-card>
     <div *ngIf="cards.length == 0">
         <p>No cards here.</p>

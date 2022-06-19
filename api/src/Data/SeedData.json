@@ -6,6 +6,8 @@
                 "Sides": [
                     "First Japanese question",
                     "First Japanese answer",
+                    "Second Japanese question",
+                    "Second Japanese answer",
                     "Notes"
                 ]
             },
@@ -31,7 +33,7 @@
         "Title": "Algebra",
         "Cards": [
             {
-                "Frames": [
+                "Sides": [
                     "First Algebra question",
                     "First Algebra answer",
                     "Notes"

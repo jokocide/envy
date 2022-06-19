@@ -5,7 +5,9 @@
     cursor: pointer;
     transition: var(--fast-alive);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border: 2px solid gray;
     margin: 4px;

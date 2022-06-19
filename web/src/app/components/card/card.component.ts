@@ -7,11 +7,13 @@ import { Card } from 'src/app/Card';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @Input() card: Card;
+  @Input() id: string;
+  @Input() createdDate: string;
+  @Input() updatedDate: string;
+  @Input() sides: string[];
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
